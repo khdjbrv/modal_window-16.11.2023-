@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=PT+Serif:wght@400;700&display=swap");
+
+:root {
+  --libre: "Libre Baskerville", serif;
+  --pt: "PT Serif", serif;
+  --mainColor: #000;
+  --btnColor: #db5e14;
+  --inputColor: #e5e5e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #828282;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+}
+
+.card {
+  margin: 8rem auto;
+  height: 500px;
+  width: 490px;
+  background-color: #fff;
+  border: #000 1px solid;
+}
+
+.container {
+  padding: 1rem 2rem;
+}
+
+.card .logo {
+  height: 250px;
+  width: 490px;
+  background-color: var(--mainColor);
+}
+
+.card .logo .navigate {
+  width: 260px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding-left: 85px;
+}
+
+.card .logo img {
+  margin-top: 3.5rem;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner h1 {
+  font-family: var(--libre);
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: 1.1rem;
+}
+
+.banner p {
+  font-family: var(--pt);
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.banner nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 1rem;
+}
+
+.banner nav input {
+  width: 280px;
+  padding: 0.8rem;
+  font-family: var(--pt);
+  overflow: hidden;
+  border: none;
+  background-color: var(--inputColor);
+  border-radius: 4px;
+}
+
+.banner nav button {
+  width: 120px;
+  margin-left: 1.4rem;
+  padding: 0.8rem 1.3rem;
+  font-family: var(--pt);
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  overflow: hidden;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  background-color: var(--btnColor);
+}
